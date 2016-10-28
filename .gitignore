@@ -1,31 +1,14 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+LED=8;
 
-# Precompiled Headers
-*.gch
-*.pch
+void setup(){
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT);
+}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-khsdgiohsilghsgopspodg
+void loop(){
+digitalWrite(LED, HIGH);
+delay(1000);
+digitalWrite(LED, LOW);
+delay(1000);
+}
